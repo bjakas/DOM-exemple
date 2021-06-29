@@ -19,7 +19,7 @@ var itemsToDelete = document.querySelectorAll("li");
 setTimeout(function () {
   for (i = 0; i < itemsToDelete.length; i++) {
     var currentItem = itemsToDelete[i];
-    currentItem.remove(); // izbrišemo parne
+    currentItem.remove();
   }
 }, 10000);
 
