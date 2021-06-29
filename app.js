@@ -1,8 +1,9 @@
-var fizzBuzz = [];
+/* var fizzBuzz = []; - tu nam ovo nije potrebno */
+
 var ul = document.querySelector("ul");
 
-for (var i = 0; i <= 50; i++) {
-  if (i === 0) continue; // ako je i u 0 preskoči ga i ne piši fizzbuzz
+for (var i = 1; i <= 50; i++) {
+  /* if (i === 0) continue;  ako je i u 0 preskoči ga i ne piši fizzbuzz - kada krećemo od 0 */
   var message = "";
 
   if (i % 3 === 0) message += "fizz";
@@ -13,6 +14,8 @@ for (var i = 0; i <= 50; i++) {
   li.innerText = message;
   ul.appendChild(li);
 }
+
+// Bonus
 
 var itemsToDelete = document.querySelectorAll("li");
 
