@@ -15,7 +15,9 @@ for (var i = 1; i <= 50; i++) {
   ul.appendChild(li);
 }
 
-// Bonus
+// Bonus 1. version with for loop
+
+/*
 
 var itemsToDelete = document.querySelectorAll("li");
 
@@ -26,5 +28,41 @@ setTimeout(function () {
   }
 }, 10000);
 
+*/
+
+// Bonus 2. version - quick one with ul.remove()
+
+setTimeout(function () {
+  ul.remove();
+}, 10000);
 
 
+// Additional bonus with adding li in intervals by setting counter
+
+/*
+
+var ul = document.querySelector("ul");
+var counter = 1; // counter start at 1
+
+var fizzBuzz = setInterval(function () {
+  var message = "";
+  var li = document.createElement("li");
+
+  if (counter % 3 === 0) {
+    message += "fizz";
+  }
+  if (counter % 5 === 0) {
+    message += "buzz";
+  }
+  if (message === "") {
+    li.innerText = counter;
+  } else {
+    li.innerText = message;
+  }
+  ul.appendChild(li);
+
+  if (counter === 50) clearInterval(fizzBuzz);
+  counter += 1;
+}, 500);
+
+*/
